@@ -17,6 +17,7 @@ public class HiServiceImpl implements HiService {
     RestTemplate restTemplate;
     @Override
     public String getData(String name) {
+        //有两种方式调用，一种是访问别名调用（就是下面的），还有就是直接调用（ip）
         return name+"： 你好呀！同志，\r\n"+restTemplate.getForObject("http://service-provider/hi?name=" + name, String.class);
     }
 }

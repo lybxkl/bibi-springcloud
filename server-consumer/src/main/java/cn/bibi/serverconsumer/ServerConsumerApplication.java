@@ -25,12 +25,18 @@ public class ServerConsumerApplication {
      *              fegin（SpringCloud提供）
      * @return
      */
+
+    /**
+     * 加入restTemplate以消费相关的服务*
+     * rest方式底层是HttpClient技术
+     * RestTemplate 是由Spring Boot Web组件提供 默认整合ribbon负载均衡器
+     *
+     **/
     @Bean
     @LoadBalanced
     /**
-     * 加入restTemplate以消费相关的服务*
-     * RestTemplate 是由Spring Boot Web组件提供
-     **/
+     * 上面两个注解 可以解决rest模板找不到的bug 就是注册到springboot容器中
+     */
     RestTemplate restTemplate()
     {
         return new RestTemplate();
