@@ -19,9 +19,18 @@ public class ServerConsumerApplication {
         SpringApplication.run(ServerConsumerApplication.class, args);
     }
 
+    /**
+     * 在SpringCloud中有两种方式调用 ：
+     *              rest（由Spring Boot Web组件提供）和
+     *              fegin（SpringCloud提供）
+     * @return
+     */
     @Bean
     @LoadBalanced
-    /**加入restTemplate以消费相关的服务**/
+    /**
+     * 加入restTemplate以消费相关的服务*
+     * RestTemplate 是由Spring Boot Web组件提供
+     **/
     RestTemplate restTemplate()
     {
         return new RestTemplate();
