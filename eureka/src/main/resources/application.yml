@@ -1,0 +1,14 @@
+
+server:
+  port: 8761
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    ### 是否注册自己到注册中心中去，这里本身就是注册中心，无需写true 但是集群啥的就要true，相互同步数据
+    registerWithEureka: false
+    fetchRegistry: false
+
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
