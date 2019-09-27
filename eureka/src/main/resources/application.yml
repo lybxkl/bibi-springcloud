@@ -10,5 +10,7 @@ eureka:
     fetchRegistry: false
 
     serviceUrl:
+      ### 注册中心与服务一般是一对多，但防止注册中心挂掉，可以再运行一个，两个互相注册，但是上面两个要改为true
+      ### defaultZone: http://localhost:8772/eureka/ 注册到其他的注册中心去，不同注册中心用英文逗号分隔
       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
 
