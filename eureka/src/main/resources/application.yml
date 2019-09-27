@@ -7,6 +7,7 @@ eureka:
   client:
     ### 是否注册自己到注册中心中去，这里本身就是注册中心，无需写true 但是集群啥的就要true，相互同步数据
     registerWithEureka: false
+    ### 因为自己是注册中心，所以不要检索服务信息，但是集群啥的就要true，相互同步数据
     fetchRegistry: false
 
     serviceUrl:

@@ -33,7 +33,7 @@ public class ServerConsumerApplication {
      *
      **/
     @Bean
-    @LoadBalanced //表示开启负载均衡器，才可以使用服务别名访问
+    @LoadBalanced //表示开启负载均衡器，才可以使用服务别名访问（rest方式）
     /**
      * 上面两个注解 可以解决rest模板找不到的bug 就是注册到springboot容器中
      */
