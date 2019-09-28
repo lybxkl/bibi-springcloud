@@ -1,0 +1,14 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: zk-Server
+  cloud:
+    zookeeper:
+      connect-string: 127.0.0.1:2181
+endpoints:
+  restart:
+    enabled: true
+logging:
+  level:
+    org.apache.zookeeper.ClientCnxn: WARN
