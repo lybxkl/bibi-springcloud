@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>cn.bibi</groupId>
-    <artifactId>zookeeper</artifactId>
+    <artifactId>zk-server-comsumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>zookeeper</name>
+    <name>zk-server-comsumer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
