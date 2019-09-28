@@ -9,9 +9,9 @@
         <relativePath/>
     </parent>
     <groupId>cn.bibi</groupId>
-    <artifactId>server-consumer</artifactId>
+    <artifactId>eureka-server-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>server-consumer</name>
+    <name>eureka-server-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

@@ -10,9 +10,9 @@
         <module name="zk-server-provider" />
         <module name="eureka" />
         <module name="feign" />
+        <module name="zk-server-comsumer" />
         <module name="ljobin" />
         <module name="eureka-server-consumer" />
-        <module name="zookeeper" />
       </profile>
     </annotationProcessing>
   </component>
@@ -23,8 +23,8 @@
       <module name="eureka-server-provider" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="ljobin" options="-parameters" />
+      <module name="zk-server-comsumer" options="-parameters" />
       <module name="zk-server-provider" options="-parameters" />
-      <module name="zookeeper" options="-parameters" />
     </option>
   </component>
 </project>

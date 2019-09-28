@@ -11,6 +11,9 @@
         <option value="$PROJECT_DIR$/feign/pom.xml" />
         <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/zk-server-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/zk-server-comsumer/pom.xml" />
       </list>
     </option>
   </component>
