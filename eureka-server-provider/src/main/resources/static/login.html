@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body align="center">
+
+    <h2 align="center">登录</h2>
+    <div class="aui-flex" align="center">
+        <div class="aui-flex-box">
+            <i class="icon icon-phone"></i>
+            <input name="username" type="text" autocomplete="off" placeholder="账号" >
+        </div>
+    </div>
+    <div class="aui-flex">
+        <div class="aui-flex-box">
+            <i class="icon icon-code"></i>
+            <input name="password" type="password" autocomplete="off" placeholder="密码" >
+        </div>
+    </div>
+    <div class="aui-ver-button">
+        <a href="/test/login2"><button> 立即登录</button></a>
+    </div>
+
+</body>
+<script type="text/javascript">
+    function binding() {
+        var obj ={};
+        obj["username"] = $('input[name="username"]').val()
+        obj["password"] = $('input[name="password"]').val()
+        alert("账号："+name+"，密码："+password)
+
+    }
+</script>
+</html>

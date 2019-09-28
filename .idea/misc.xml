@@ -9,6 +9,8 @@
         <option value="$PROJECT_DIR$/server-provider/pom.xml" />
         <option value="$PROJECT_DIR$/server-consumer/pom.xml" />
         <option value="$PROJECT_DIR$/feign/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
+        <option value="$PROJECT_DIR$/zk-server-provider/pom.xml" />
       </list>
     </option>
   </component>
