@@ -1,0 +1,14 @@
+
+###eureka 服务端口号
+server:
+  port: 8509
+spring:
+  application:
+    name: consul-server-comsumer
+  ####consul注册中心地址
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        hostname: 192.168.18.220
