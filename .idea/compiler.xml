@@ -6,27 +6,51 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="api-service-provider-impl" />
         <module name="eureka-server-provider" />
+        <module name="api-service-provider" />
         <module name="zk-server-provider" />
         <module name="eureka" />
         <module name="feign" />
         <module name="zk-server-comsumer" />
-        <module name="ljobin" />
+        <module name="api-service-comsumer" />
         <module name="eureka-server-consumer" />
+        <module name="api-service-comsumer-impl" />
         <module name="consul-server-provider" />
         <module name="consul-server-comsumer" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-comsumer" target="1.7" />
+      <module name="api-provider" target="1.7" />
+      <module name="api-provider2" target="1.7" />
+      <module name="feign-server-provider" target="1.8" />
+      <module name="feign-test" target="1.7" />
+      <module name="feign-test-provider" target="1.8" />
+      <module name="feign_service_provider" target="1.7" />
+      <module name="order" target="1.7" />
+      <module name="test" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="api-service-comsumer" options="-parameters" />
+      <module name="api-service-comsumer-impl" options="-parameters" />
+      <module name="api-service-provider" options="-parameters" />
+      <module name="api-service-provider-impl" options="-parameters" />
       <module name="consul-server-comsumer" options="-parameters" />
       <module name="consul-server-provider" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eureka-server-consumer" options="-parameters" />
       <module name="eureka-server-provider" options="-parameters" />
       <module name="feign" options="-parameters" />
+      <module name="feign-api-service" options="" />
+      <module name="feign-api-service-impl" options="" />
+      <module name="feign-server-provider" options="-parameters" />
+      <module name="feign-test" options="" />
+      <module name="feign-test-provider" options="-parameters" />
       <module name="ljobin" options="-parameters" />
+      <module name="test" options="" />
       <module name="zk-server-comsumer" options="-parameters" />
       <module name="zk-server-provider" options="-parameters" />
     </option>
