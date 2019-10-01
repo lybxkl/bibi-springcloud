@@ -1,11 +1,10 @@
-
-###eureka ·şÎñ¶Ë¿ÚºÅ
+###eureka æœåŠ¡ç«¯å£å·
 server:
   port: 8510
 spring:
   application:
     name: consul-server-provider
-  ####consul×¢²áÖĞĞÄµØÖ·
+  ####consulæ³¨å†Œä¸­å¿ƒåœ°å€
   cloud:
     consul:
       host: localhost

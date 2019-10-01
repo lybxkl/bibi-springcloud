@@ -1,14 +1,13 @@
-
-###eureka ·şÎñ¶Ë¿ÚºÅ
+###eureka æœåŠ¡ç«¯å£å·
 server:
-  port: 8509
+  port: 8510
 spring:
   application:
-    name: consul-server-comsumer
-  ####consul×¢²áÖĞĞÄµØÖ·
+    name: consul-server-provider
+  ####consulæ³¨å†Œä¸­å¿ƒåœ°å€
   cloud:
     consul:
       host: localhost
       port: 8500
       discovery:
-        hostname: 192.168.18.220
+        hostname: 192.168.18.221
