@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-service-provider-impl" />
+        <module name="eureka-server-consumer" />
         <module name="eureka-server-provider" />
         <module name="api-service-provider" />
         <module name="zk-server-provider" />
@@ -14,8 +14,8 @@
         <module name="feign" />
         <module name="zk-server-comsumer" />
         <module name="api-service-comsumer" />
-        <module name="eureka-server-consumer" />
         <module name="api-service-comsumer-impl" />
+        <module name="api-service-provider-impl" />
         <module name="consul-server-provider" />
         <module name="consul-server-comsumer" />
       </profile>
