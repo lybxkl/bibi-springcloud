@@ -16,6 +16,11 @@ public class TestClazz implements Test {
     @Override
     @RequestMapping("/getClazz")
     public Class getClazz() {
+        try {
+            Thread.sleep(1500);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return new Class("一班",2017);
     }
 }

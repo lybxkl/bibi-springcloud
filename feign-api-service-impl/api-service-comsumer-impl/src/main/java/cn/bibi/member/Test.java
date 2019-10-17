@@ -23,11 +23,17 @@ public class Test implements TestService {
     @HystrixCommand(fallbackMethod = "fallback")
     @RequestMapping("/getStudent")
     public Student getStudent() {
+        System.err.println("getStudent: 线程名称"+Thread.currentThread().getName());
         Class clazz = feignTest.getClazz();
         return new Student("刘衍斌在"+clazz.getClassName()+",班号："+clazz.getClassId(),21);
     }
     @RequestMapping("/fallback")
     public Student fallback(){
         return new Student("null",0);
+    }
+    @RequestMapping("/getClazz")
+    public Class getClazz(){
+        System.err.println("getClazz: 线程名称"+Thread.currentThread().getName());
+        return feignTest.getClazz();
     }
 }

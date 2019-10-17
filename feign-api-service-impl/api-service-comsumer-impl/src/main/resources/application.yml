@@ -31,11 +31,11 @@ ribbon:
 feign:
   hystrix:
     enabled: true
-
-#### hystrix禁止服务超时时间  本地测试添加，上线要取消的
-hystrix:
-  command:
-    default:
-      execution:
-        timeout:
-          enabled: false
+#### 默认超时时间1秒
+#### hystrix禁止服务超时时间  本地测试添加，上线要取消的 ,可以调大超时时间
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: false
